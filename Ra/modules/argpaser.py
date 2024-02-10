@@ -127,3 +127,16 @@ network.add_argument(
     help="Show connected network",
     dest="connected"
 )
+
+#* Battery 
+battery = parser.add_argument_group('Battery')
+battery.add_argument(
+    "-bat",
+    "--battery",
+    action='store_true',
+    help="Shows battery info."
+)
+
+
+
+args = parser.parse_args()
