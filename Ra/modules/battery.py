@@ -12,6 +12,3 @@ def view_battery_percantage():
 def view_battery_status():
     with open(os.path.join(batteries[0], "status") ,'r') as bat : 
         print(bat.readline())
-
-view_battery_percantage()
-view_battery_status()

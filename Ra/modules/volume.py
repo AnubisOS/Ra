@@ -17,5 +17,3 @@ def deafen():
 
 def mute():
     os.system(f"pamixer --default-source -t ")
-
-increase_by()

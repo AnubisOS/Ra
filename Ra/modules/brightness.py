@@ -5,7 +5,7 @@ from math import ceil
 
 MAX = 255
 
-path = "/sys/class/backlight" 
+path = "/sys/class/backlight"
 
 vega = [ os.path.join(path,card) for card in os.listdir(path) ]
 
@@ -39,5 +39,3 @@ def toggle_night_mode():
     p = sp.Popen(cmds, start_new_session=True, stdout=sp.DEVNULL, stderr=sp.STDOUT)
     return "ON"
 
-
-toggle_night_mode()
